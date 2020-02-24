@@ -2,20 +2,20 @@ package comepam.epamass4;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class constructioncost 
+public class constructioncost
 {
 		private static final Logger LOGGER=LogManager.getLogger(constructioncost.class);
-		int cost(String standard_of_material,int totalarea,char automated) {
+		int cost(String standardofmaterial,int totalarea,char automated) {
 
-		if(standard_of_material=="standard"&& automated=='N') {
+		if(standardofmaterial=="standard"&& automated=='N') {
 		LOGGER.info("If standard of material is 'standard' and not an automated house");
 		return totalarea*1200;
 		}
-		else if(standard_of_material=="above standard"&& automated=='N') {
+		else if(standardofmaterial=="above standard"&& automated=='N') {
 		LOGGER.info("If standard of material is 'above standard' and not an automated house");
 		return totalarea*1500;
 		}
-		else if(standard_of_material=="high standard" && automated=='N') {
+		else if(standardofmaterial=="high standard" && automated=='N') {
 		LOGGER.info("If standard of material is 'high standard' and is not an automated house");
 		return totalarea*1800;
 		}
